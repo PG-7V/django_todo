@@ -1,6 +1,6 @@
 from django.urls import path
 
-from todos.views import DetailTodo, ListTodo
+from backend.todos.views import DetailTodo, ListTodo
 
 urlpatterns = [
     path('<int:pk>/', DetailTodo.as_view()),

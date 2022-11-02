@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-j4@)0ts1zq^i=f48e@3c=w3hehj%57ns3bak=z2w+d5ya0+d9n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'corsheaders',
 
     # Local
-    'todos.apps.TodosConfig',
+    'backend.todos.apps.TodosConfig',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +56,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = ('localhost:3000',)
+CORS_ORIGIN_WHITELIST = ('http://localhost:3000',)
+
 
 ROOT_URLCONF = 'django_todo.urls'
 
@@ -133,3 +134,4 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
+
