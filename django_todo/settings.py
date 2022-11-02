@@ -58,7 +58,6 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = ('http://localhost:3000',)
 
-
 ROOT_URLCONF = 'django_todo.urls'
 
 TEMPLATES = [
@@ -134,4 +133,3 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
-
